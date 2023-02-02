@@ -1,0 +1,84 @@
+body {
+background-color: #fff;
+margin: 0;
+padding: 0;
+max-width: 1440px;
+}
+
+.header {
+    background-image: url(image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: contains;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+.header-flex {
+    display: flex;
+    padding: 2rem;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+h3{
+    width: 75% ;
+    justify-content: left;
+    font-family:'Fraunces';
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.header p{
+    text-align: right;
+    justify-content: space-between;
+    font-family: 'Barlow';
+    font-size: x-small; 
+    margin: 1.5rem 1rem 1rem 1rem;
+    padding: 0;
+    
+}
+
+.header button {
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    color: black;
+    background-color: #fff;
+    border-radius: 1rem;
+    border-style: none;
+    font-family:'Fraunces';
+    font-weight: lighter;
+    font-size: x-small; 
+    width: 100px ;
+    height: 30px;
+}
+
+h1 {
+    text-align: center;  
+    font-family:'Fraunces';
+    padding-top: 0.7rem;
+    letter-spacing: 0.4rem;
+}
+
+
+.content-flex {
+    display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    
+}
+
+.transform-text {
+width: 50%;
+text-align:right;
+}
+
+.standout-text {
+width: 50%;
+text-align: left;
+}
+
+.content-image {
+    position: relative;
+    width: 50%;
+}
