@@ -13,6 +13,8 @@ max-width: 1440px;
     width: 100vw;
     height: 100vh;
     color: #fff;
+    background-position: center;
+    background-color: #3ebfff ;
 }
 
 .header-flex {
@@ -25,14 +27,14 @@ h3{
     width: 75% ;
     justify-content: left;
     font-family:'Fraunces';
-    margin: 1rem 1rem 1rem 1rem;
+    margin: 0.95rem 1rem 1rem 1rem;
 }
 
 .header p{
     text-align: right;
     justify-content: space-between;
     font-family: 'Barlow';
-    font-size: x-small; 
+    font-size: small; 
     margin: 1.5rem 1rem 1rem 1rem;
     padding: 0;
     
@@ -57,28 +59,95 @@ h1 {
     font-family:'Fraunces';
     padding-top: 0.7rem;
     letter-spacing: 0.4rem;
+    font-size: 3rem;
 }
 
 
-.content-flex {
+.flex-content {
     display: flex;
 	flex-flow: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-    
 }
 
-.transform-text {
-width: 50%;
-text-align:right;
+.row-reverse {
+    display: flex;
+	flex-flow: row-reverse;
+
 }
 
-.standout-text {
-width: 50%;
-text-align: left;
-}
-
-.content-image {
-    position: relative;
+.half-item content-text {
     width: 50%;
+}
+
+.content-text {
+    padding: 10rem 5rem 5rem 5rem ;
+    justify-content: center;
+}
+
+.content-text h2 {
+    font-family:'Fraunces';
+    font-size: 2rem;
+}
+
+.content-text h5 {
+    font-family:'Fraunces';
+    text-decoration: underline;
+   
+}
+
+.content-text p {
+    font-size: medium;
+    font-family: 'Barlow';
+    color: gray;
+}
+
+.half-item content-image {
+    width: 50%;
+}
+
+
+.services-flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: url(image-graphic-design.jpg), url(image-photography.jpg);
+    background-repeat: no-repeat, repeat-x;
+    background-size: contains;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+ }
+
+
+.service-content {
+    padding: 20rem 10rem 5rem 8rem;
+}
+
+.service-content h4 {
+    font-family:'Fraunces';
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.service-content p {
+    text-align: center;
+    font-family: 'Barlow';
+    opacity: 0.6;
+    line-height: 2rem;
+}
+
+
+.client-flex {
+    display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: end;
+
+}
+.third-part-item {
+    width: 25%;
 }
