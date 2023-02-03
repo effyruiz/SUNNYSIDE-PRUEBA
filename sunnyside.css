@@ -1,8 +1,11 @@
+body, html {
+    box-sizing: border-box;
+}
+
 body {
 background-color: #fff;
 margin: 0;
 padding: 0;
-max-width: 1440px;
 }
 
 .header {
@@ -102,7 +105,7 @@ h1 {
     color: gray;
 }
 
-.half-item content-image {
+.half-item content-image img {
     width: 50%;
 }
 
@@ -112,6 +115,7 @@ h1 {
     flex-flow: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    box-sizing: border-box;
     background-image: url(image-graphic-design.jpg), url(image-photography.jpg);
     background-repeat: no-repeat, repeat-x;
     background-size: contains;
@@ -120,7 +124,6 @@ h1 {
     height: 100vh;
     margin: 0;
  }
-
 
 .service-content {
     padding: 20rem 10rem 5rem 8rem;
@@ -142,12 +145,38 @@ h1 {
 
 
 .client-flex {
-    display: flex;
-	flex-flow: row;
-	flex-wrap: nowrap;
-	justify-content: end;
+    position: relative;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
 
+.client-flex.featured {
+    background-color:#fff;
 }
-.third-part-item {
-    width: 25%;
+
+
+.gallery-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.footer{
+    color:  hsl(149, 35%, 21%);
+}
+
+.footer-flex {
+    display:flex;
+flex-direction: column;
+flex-wrap: nowrap;
+}
+
+
+.footer-flex.featured {
+    background-color:rgb(141, 202, 173);
+    box-sizing: border-box;
+}
+
